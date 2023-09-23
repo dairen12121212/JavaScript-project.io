@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #24292E;
+    /* position: relative; */
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.divider {
+    margin-top: 100px;
+    width: 100%;
+    height: 3px;
+    background-color: #9392F0;
+}
+
+
+
+.slider {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.slider__container {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: red;
+    overflow: hidden;
+}
+
+.slider__line {
+    display: flex;
+    width: 3600px;
+
+}
+
+.slider__item {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__button {
+    height: 40px;
+    width: 60px;
+    background: #000;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.7s;
+}
+
+.slider__button:hover {
+    background: #9392F0;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.tabs {
+    margin-top: 100px;
+}
+
+.tabs_hidden {
+    display: none;
+}
+
+.tabs_show {
+    display: flex;
+}
+
+.tabs__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tabs__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.tabs__nav {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tabs__button {
+    width: 80px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+
+.tabs__button_active {
+    background: #9392F0;
+}
+
+/* .tabs__items {} */
+
+.tabs__item {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tabs__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 375px;
+    height: 300px;
+    font-size: 30px;
+    color: #fff;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+.modal {
+    margin-top: 100px;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.modal__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__card {
+    height: 400px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    /* z-index: 1000; */
+}
+
+.modal__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(38, 36, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.modal__close {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #9392F0;
+}
+
+.modal_show {
+    display: block;
+}
+
+.modal_hidden {
+    display: none;
+}
+
+
+.accordion {
+    margin-top: 100px;
+}
+
+.accordion__title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accordion__container {
+    width: 1200px;
+    margin: 0 auto;
+    /* transition: all 0.7s; */
+
+}
+
+.accordion__button {
+    width: 100%;
+    height: 50px;
+    background-color: #9392F0;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    /* transition: all 0.7s; */
+}
+
+.accordion__text {
+    /* transition: 0.5s all; */
+    transition: all 0.3s;
+    display: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 30px;
+    border: 1px dashed #9392F0;
+    text-align: center;
+}
+
+.counter {
+    margin-top: 100px;
+}
+
+.counter__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.counter__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+
+}
+
+.counter__content {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.counter__buttons {
+    margin-top: 30px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.counter__button {
+    width: 70px;
+    height: 50px;
+    background: #9392F0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.edit {
+    margin-top: 100px;
+}
+
+.edit__container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.edit__title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edit__input {
+    padding: 30px;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    font-size: 30px;
+    background: #303334;
+}
+
+.cards {
+    margin: 100px 0 100px 0;
+    position: relative;
+
+}
+
+.cards__container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.cards__title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.cards__item {
+    margin: 0 30px 30px 0;
+    width: 250px;
+    height: 400px;
+    background-color: grey;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100px;
+    height: 200px;
+    /* background-color: red; */
+}
+
+.cards__button {
+    width: 100px;
+    height: 75px;
+    background: #9392F0;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 30px 0 0 30px
+}
